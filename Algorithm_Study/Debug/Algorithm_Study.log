@@ -1,0 +1,5 @@
+﻿  4999.cpp
+d:\visual studio 2015\projects\algorithm_study\algorithm_study\4999.cpp(10): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\visual studio 2015\projects\algorithm_study\algorithm_study\4999.cpp(13): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Algorithm_Study.vcxproj -> D:\Visual Studio 2015\Projects\Algorithm_Study\Debug\Algorithm_Study.exe
+  Algorithm_Study.vcxproj -> D:\Visual Studio 2015\Projects\Algorithm_Study\Debug\Algorithm_Study.pdb (Full PDB)
