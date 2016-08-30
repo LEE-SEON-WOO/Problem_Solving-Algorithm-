@@ -576,5 +576,8 @@
     <ClCompile Include="11053_LIS복습필요.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9655.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
