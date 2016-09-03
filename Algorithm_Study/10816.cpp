@@ -1,67 +1,24 @@
+#include <map>
 #include <cstdio>
-#include <algorithm>
-#include <functional>
 using namespace std;
-int arr[5000001];
 
+map<int, int> _map;
 int main()
 {
-	int N, M, mid, v, s, e;
+	int N;
 	scanf("%d", &N);
-	for (int i = 0; i < N; i++)
-	{
-		scanf("%d", &arr[i]);
-	}
-	sort(arr, arr + N);
-	scanf("%d", &M);
-	for (int i = 0; i < M; i++)
+	int v;
+	for (int i = 0; i<N; i++)
 	{
 		scanf("%d", &v);
-		if (!binary_search(arr, arr + N, v))
-			printf("0 ");
-		else
-		{
-			s = 0;
-			e = N - 1;
-			mid = (s + e) / 2;
-			int cnt = 0;
-			while (s < e)
-			{
-				if (v > arr[mid])
-				{
-					s = mid + 1;
-				}
-				else if (v < arr[mid])
-				{
-					e = mid - 1;
-				}
-				else
-				{
-					int tmp = mid;
-					while (1)
-					{
-						tmp++;
-						if (tmp > e)
-							break;
-						if (arr[tmp] == v)
-							cnt++;
-					}
-					tmp = mid;
-					while (1)
-					{
-						tmp--;
-						if (tmp < s)
-							break;
-						if(arr[tmp] == v)
-							cnt++;
-					}
-					break;
-				}
-				mid = (s + e) / 2;
-			}
-			printf("%d ", cnt+1);
-		}
+		_map[v]++;
 	}
-	
+	int M;
+	scanf("%d", &M);
+	for (int i = 0; i<M; i++)
+	{
+		scanf("%d", &v);
+		printf("%d ", _map[v]);
+	}
 	return 0;
 }
